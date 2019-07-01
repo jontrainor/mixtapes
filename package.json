@@ -1,6 +1,7 @@
 {
   "name": "mixtapes",
   "version": "0.1.0",
+  "homepage": "http://jontrainor.github.io/mixtapes",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
