@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SpotifyWebApi from 'spotify-web-api-js';
 import cookie from 'js-cookie'
 import 'url-search-params-polyfill'
+import ErrorBoundary from './ErrorBoundary'
 import Playlist from './Playlist'
 import './App.css';
 
@@ -111,9 +112,13 @@ function App() {
     }
   }
 
-  return accessToken ? renderFetchPlaylistState() : (
-    <button onClick={handleLoginClick}>Log in to Spotify</button>
-  );
+  return (
+    <ErrorBoundary>
+      {accessToken ? renderFetchPlaylistState() : (
+        <button className="button" onClick={handleLoginClick}>Log in to Spotify</button>
+      )}
+    </ErrorBoundary>
+  )
 }
 
 export default App;
