@@ -29,7 +29,7 @@ function App() {
     const queryAccessToken = query.get('access_token')
     if(queryAccessToken) {
       spotifyApi.setAccessToken(queryAccessToken)
-      setAccessToken(cookieAccessToken)
+      setAccessToken(queryAccessToken)
       cookie.set(COOKIE_NAME, queryAccessToken)
     } else if(cookieAccessToken) {
       setAccessToken(cookieAccessToken)
