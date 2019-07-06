@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "264050ed38a188586ec9",
-    "url": "/mixtapes/static/css/main.f055d1c6.chunk.css"
+    "revision": "1a79556badbc47cbada0",
+    "url": "/mixtapes/static/css/main.00e2858f.chunk.css"
   },
   {
-    "revision": "264050ed38a188586ec9",
-    "url": "/mixtapes/static/js/main.13c1b1b5.chunk.js"
+    "revision": "1a79556badbc47cbada0",
+    "url": "/mixtapes/static/js/main.56be941d.chunk.js"
   },
   {
     "revision": "5d4eb193cc9baf1ca997",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/mixtapes/static/js/2.19d96e02.chunk.js"
   },
   {
-    "revision": "5495f89555b394c754efe200424adae5",
+    "revision": "a97d03be2e02378c210b7a3625d4d985",
     "url": "/mixtapes/index.html"
   }
 ];
