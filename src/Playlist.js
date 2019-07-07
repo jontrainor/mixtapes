@@ -40,7 +40,7 @@ function Playlist(props) {
           const track = trackObj.track
           return (
             <div key={track.id} className="trackContainer">
-              <p> {`${track.name} by ${renderTrackArtists(track)} from ${track.album.name}`} </p>
+              <p> {`${track.name} by ${renderTrackArtists(track)} from ${track.album.name} (${track.album.release_date.split('-')[0]})`} </p>
             </div>
           );
         })
