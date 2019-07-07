@@ -26,3 +26,12 @@ section {
   padding: 30px;
   text-align: center;
 }
+
+.uri {
+  font-size: 0.8em;
+}
+
+.trackContainer {
+  padding: 10px;
+  border-bottom: solid 1px black;
+}

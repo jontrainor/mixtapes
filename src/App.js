@@ -101,7 +101,9 @@ function App() {
             { playlists.map((playlist, index) => {
               return (
                 <Playlist
+                  key={playlist.id}
                   playlist={playlist}
+                  expandTracks={index === 0}
                 />
               )
             })}
