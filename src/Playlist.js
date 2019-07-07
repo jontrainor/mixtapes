@@ -4,7 +4,6 @@ import SpotifyWebApi from 'spotify-web-api-js';
 function Playlist(props) {
   const [tracks, setTracks] = useState([])
   const [fetchTracksStatus, setFetchTracksStatus] = useState('NOT_ASKED')
-  const [expandTracks, setExpandTracks] = useState(props.expandTracks)
 
   const fetchTracks = () => {
     setFetchTracksStatus('PENDING')
@@ -44,6 +43,8 @@ function Playlist(props) {
             </div>
           );
         })
+      default:
+        return null;
     }
   }
 
